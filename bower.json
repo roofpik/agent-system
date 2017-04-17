@@ -1,0 +1,23 @@
+{
+  "name": "agent",
+  "homepage": "https://github.com/roofpik/agent-system",
+  "authors": [
+    "Arpit Mittal <arpit@roofpik.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "materialize": "^0.98.2",
+    "firebase": "^3.7.8"
+  }
+}

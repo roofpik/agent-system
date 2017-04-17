@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="roofpikWeb">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1.0, user-scalable=0">
+    <link rel="icon" href="images/general/favicon.png" type="image/png">
+    <title>Roofpik Business</title>
+    <meta name="description" content="Business Application for Roofpik Value Partners">
+    <meta name="author" content="roofpik">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css?v=1.0">
+    <link rel="stylesheet" href="../bower_components/materialize/dist/css/materialize.min.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div ui-view autoscroll="true"></div>
+    </main>
+    <footer class="page-footer"></footer>
+    <!-- Bower Components Start -->
+    <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../bower_components/firebase/firebase.js"></script>
+    <!-- Bower Components End -->
+    <script type="text/javascript" src="resources/general/app.js?v=1.0"></script>
+    <script type="text/javascript" src="resources/general/config.js?v=1.0"></script>
+    <!-- Services -->
+    <script type="text/javascript" src="resources/general/services/config.services.js?v=1.0"></script>
+    <script type="text/javascript" src="resources/general/services/api.services.js?v=1.0"></script>
+    <script type="text/javascript" src="resources/general/services/firebase.services.js?v=1.0"></script>
+    <script type="text/javascript" src="resources/auth/services/auth.services.js?v=1.0"></script>
+    <!-- Directives -->
+    <script type="text/javascript" src="scripts/directives/directives.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="resources/auth/controllers/auth.ctrl.js?v=1.0"></script>
+    <script type="text/javascript" src="resources/general/controllers/header.ctrl.js?v=1.0"></script>
+</body>
+
+</html>
