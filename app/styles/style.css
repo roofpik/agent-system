@@ -7,3 +7,16 @@
   main {
       flex: 1 0 auto;
   }
+
+  .logo{width: 30px; margin: 15px; }
+
+
+
+
+
+ @media screen and (min-width: 0px) and (max-width: 600px){
+
+.logo{margin: 10px;}
+
+
+  }
