@@ -7,16 +7,16 @@
   main {
       flex: 1 0 auto;
   }
-
-  .logo{width: 30px; margin: 15px; }
-
-
-
-
+  .mgt20{margin-top: 20px;}
+.logo{width: 30px; margin: 15px;}
+.sld_logo img{ width: 100px; margin-top: 20px; }
+.sld_logo:hover{background-color: transparent !important;}
+.trans_fm{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9; width: 340px;}
+.sld_ft{position: absolute; bottom:60px; left:0; width: 100%;}
 
  @media screen and (min-width: 0px) and (max-width: 600px){
-
 .logo{margin: 10px;}
-
-
+.trans_fm{width: 96%;}
+.btn{padding-left: 20px !important; padding-right: 20px  !important;}
+.logo{margin-left: 0px;}
   }

@@ -10,8 +10,12 @@ app.factory("authenticationService", ['$state', '$rootScope', '$q', function($st
         var deferred = $q.defer();
         var response = firebase.auth().signInWithCustomToken(token).then(function(user) {
             $rootScope.uid = user.uid;
-            deferred.resolve(user);
-            return deferred.promise;
+            db.ref('business/users/' + user.uid).once('value', function(snapshot) {
+                $rootScope.agentid = snapshot.val().agent;
+                deferred.resolve(user);
+                return deferred.promise;
+            })
+
         }).catch(function(error) {
             // Handle Errors here.
             deferred.reject(error);
