@@ -1,0 +1,146 @@
+<section class="section">
+    <div class="container">
+        <div class="row pd48">
+            <div class="col s12 m8 offset-m2">
+                <div class="row mgan">
+                    <div class="col s12 pdl30">
+                        <h5 class="orange-text">Fill in the Details</h5>
+                        <form name="contactUs">
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="select_project" type="text" class="validate" required>
+                                    <label for="select_project">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="email" type="text" class="validate" required>
+                                    <label for="email">Email Id</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="mobile" type="text" class="validate" required>
+                                    <label for="mobile">Mobile No.</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <h5 class="pdl10 ft15 b">Rent Range</h5>
+                                <div class="input-field col s6">
+                                    <input id="select_project" type="text" class="validate" required>
+                                    <label for="select_project">Min-Amount</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="select_project" type="text" class="validate" required>
+                                    <label for="select_project">Max-Amount</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s6">
+                                    <select class="grey-text">
+                                        <option value="" disabled selected>BHK</option>
+                                        <option value="1">1 BHK</option>
+                                        <option value="2">2 BHK</option>
+                                        <option value="3">3 BHK</option>
+                                        <option value="4">4 BHK</option>
+                                        <option value="5">5 BHK</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col s6">
+                                    <select class="grey-text">
+                                        <option value="" disabled selected>Size Sq. Ft.</option>
+                                        <option value="1">1500 - 1800 Sq. Ft.</option>
+                                        <option value="2">1500 - 1800 Sq. Ft.</option>
+                                        <option value="3">1500 - 1800 Sq. Ft.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <h5 class="pdl10 ft15 b">Projects</h5>
+                                <div class="input-field col s6">
+                                    <input id="select_project" type="text" class="validate" required>
+                                    <label for="select_project">Projects Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="select_project" type="text" class="validate" required>
+                                    <label for="select_project">Projects Location</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="near" type="text" class="validate" required>
+                                    <label for="near">Type your Designation </label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="near" type="text" class="validate" required>
+                                    <label for="near">Duration</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="near" type="text" class="validate" required>
+                                    <label for="near">Specific Amenities </label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <h5 class="pdl10 ft15 b">Near to any place</h5>
+                                <div class="input-field col s12">
+                                    <input id="near" type="text" class="validate" required>
+                                    <label for="near">Near</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <h5 class="pdl10 ft15 b">Activated</h5>
+                                <div class="input-field col s4">
+                                    <input id="date" type="text" class="validate" required>
+                                    <label for="date">Date</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input id="time" type="text" class="validate" required>
+                                    <label for="time">Time</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input id="user" type="text" class="validate" required>
+                                    <label for="user">User</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="select_project" type="text" class="validate" required>
+                                    <label for="project">Project Type</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <input id="movedate" type="date" class="datepicker">
+                                    <label for="movedate">Move in Date</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                                    <label for="textarea1">Type your Message</label>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('select').material_select();
+
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+    });
+    </script>
+</section>

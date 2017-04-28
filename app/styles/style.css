@@ -7,12 +7,34 @@
   main {
       flex: 1 0 auto;
   }
+  .mgan{margin:0px;}
+  .mgbn{margin-bottom: 0;}
+  
+.bodb{border-bottom: 1px solid #ddd;}
+.bodt{border-top: 1px solid #ddd;}
+
+.pdb10{padding-bottom: 10px;}
+.pdt10{padding-top: 10px;}
+.pdl10{padding-left: 10px;}
+.pdr10{padding-right: 10px;}
+
+.pda10{padding: 10px;}
+.mgtn{margin-top: 0;}
+
+.b{font-weight: 700;}
+.team_card .card .card-title, .leads_card .card .card-title {font-size: 20px !important; font-weight: 400;}
+.ft13{font-size: 13px !important;}
+.ft15{font-size: 15px !important}
+.mgbn{margin-bottom: 0px !important;}
   .mgt20{margin-top: 20px;}
 .logo{width: 30px; margin: 15px;}
 .sld_logo img{ width: 100px; margin-top: 20px; }
 .sld_logo:hover{background-color: transparent !important;}
 .trans_fm{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9; width: 340px;}
 .sld_ft{position: absolute; bottom:60px; left:0; width: 100%;}
+.popwdh{width: 400px; max-width: 400px}
+.block{display: block;}
+
 
  @media screen and (min-width: 0px) and (max-width: 600px){
 .logo{margin: 10px;}

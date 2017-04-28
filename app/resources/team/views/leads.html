@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row center mgt20">
+        <div class="col s2">
+            <a class="waves-effect waves-light btn" ng-click="addNewMember()">Add New</a>
+        </div>
+    </div>
+    <div class="row leads_card">
+        <div class="col s12 m6">
+            <div class="card sticky-action">
+                <div class="card-content ft13">
+                    <span class="card-title">Digamber Sharma</span>
+                    <div class="row  grey-text text-darken-2">
+                        <div class="row pda10 mgbn">
+                            <div class="col s12">09654860689 | digamber@roofpik.com</div>
+                        </div>
+                        <div class="row bodt pda10 mgbn">
+                            <div class="col s5">
+                                Rent Range
+                                <br> BHK
+                                <br> Size
+                            </div>
+                            <div class="col s7 b">
+                                20,000 - 30,000
+                                <br> 3, 4
+                                <br> 1500 - 1800 Sq. Ft.
+                            </div>
+                        </div>
+                        <div class="row bodb bodt center pda10 mgbn">
+                            <h5 class="orange-text mgtn">Preferred</h5>
+                            <div class="col s6">
+                                <b> Apartment, Villa, Penthouse</b>
+                                <span class="block">Projects</span>
+                            </div>
+                            <div class="col s6">
+                                <b> Sohna Road</b>
+                                <span class="block">Location</span>
+                            </div>
+                        </div>
+                        <div class="row pda10 mgbn">
+                            <div class="col s5">Designation</div>
+                            <div class="col s7 b">Web Designer</div>
+                            <div class="col s5">Duration</div>
+                            <div class="col s7 b">6 Months/3 years</div>
+                            <div class="col s5">Specific Amenities</div>
+                            <div class="col s7 b">Swimming Pool, Good Clubhouse</div>
+                            <div class="col s5">Near to any place </div>
+                            <div class="col s7 b">DPS, Vipul Trade Centre</div>
+                            <div class="col s5">Expected Move in Date</div>
+                            <div class="col s7 b">08-04-2017</div>
+                        </div>
+                        <div class="row bodb bodt center pda10">
+                            <h5 class="teal-text text-lighten-1 mgtn">Activated</h5>
+                            <div class="col s4">
+                                <b> 22nd Jun</b>
+                                <span class="block">Date</span>
+                            </div>
+                            <div class="col s4">
+                                <b> 09:00 AM</b>
+                                <span class="block">Time</span>
+                            </div>
+                            <div class="col s4">
+                                <b> Gaurav</b>
+                                <span class="block">User</span>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="#">Usage</a>
+                    <a href="#">Login</a>
+                    <i class="material-icons right activator">more_vert</i>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Arpit Mittal<i class="material-icons right">close</i></span>
+                    <div class="mgt20">
+                        <a href="#" class="btn ">Block</a>
+                        <a href="#" class="btn red">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Trigger -->
+    <!-- Modal Structure -->
+    <div id="addnewmodal" class="modal popwdh">
+        <div class="modal-content">
+            <h5>Add New User</h5>
+            <div class="row mgbn">
+                <div class="input-field col s12">
+                    <input id="first_name" type="text" class="validate" ng-model="data.name">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="emailid" type="text" class="validate">
+                    <label for="emailid">Email Id</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="mobile" type="text" class="validate" ng-model="data.key">
+                    <label for="mobile">Mobile Number</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="modal-action modal-close waves-effect waves-green btn" ng-click="addMember()">Add</a>
+            <a class="modal-action modal-close waves-effect waves-green btn-flat" ng-click="cancelAddMember()">Cancel</a>
+        </div>
+    </div>
+   
+</div>

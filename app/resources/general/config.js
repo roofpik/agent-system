@@ -42,6 +42,30 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
         controller: 'teamCtrl'
     });
 
+    $stateProvider.state('leads', {
+        url: '/leads/tenants',
+        templateUrl: 'resources/team/views/leads.html',
+        controller: 'teamCtrl'
+    });
+
+    $stateProvider.state('tenants-form', {
+        url: '/tenants-form',
+        templateUrl: 'resources/team/views/tenants-form.html'
+       
+    });
+
+    $stateProvider.state('account-form', {
+        url: '/leads/account-form',
+        templateUrl: 'resources/team/views/account-form.html'
+       
+    });
+
+    $stateProvider.state('invoice', {
+        url: '/invoice',
+        templateUrl: 'resources/team/views/invoice.html'
+       
+    });
+
 
     $urlRouterProvider.otherwise('/');
 

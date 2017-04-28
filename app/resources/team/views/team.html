@@ -4,12 +4,18 @@
             <a class="waves-effect waves-light btn" ng-click="addNewMember()">Add New</a>
         </div>
     </div>
-    <div class="row center">
-        <div class="col s12 m6 l5 ">
+    <div class="row center team_card">
+        <div class="col s12 m6 l4 ">
             <div class="card sticky-action">
                 <div class="card-content">
                     <span class="card-title ">Arpit Mittal </span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                   <div class="grey-text text-darken-2">
+                    <p>digamber@roofpik.com</p>
+                    <p>09654860689</p>
+                    <p>Leads Used  -<b> Total 999</b></p>
+                    <p>30 Days Leads</p>
+                    <p>Status - <span class="teal-text text-lighten-1">Active</span> <span class="grey-text">Inactive</span></p>
+                    </div>
                 </div>
                 <div class="card-action">
                     <a href="#">Usage</a>
@@ -17,31 +23,89 @@
                     <i class="material-icons right activator">more_vert</i>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <a href="#">Block</a>
-                    <a href="#">Delete</a>
+                    <span class="card-title grey-text text-darken-4 ">Arpit Mittal<i class="material-icons right">close</i></span>
+                    <div class="mgt20">
+                    <a href="#" class="btn ">Block</a>
+                    <a href="#" class="btn red">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col s12 m6 l4 ">
+            <div class="card sticky-action">
+                <div class="card-content">
+                    <span class="card-title ">Arpit Mittal </span>
+                   <div class="grey-text text-darken-2">
+                    <p>digamber@roofpik.com</p>
+                    <p>09654860689</p>
+                    <p>Leads Used  -<b> Total 999</b></p>
+                    <p>30 Days Leads</p>
+                    <p>Status - <span class="teal-text text-lighten-1">Active</span> <span class="grey-text">Inactive</span></p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="#">Usage</a>
+                    <a href="#">Login</a>
+                    <i class="material-icons right activator">more_vert</i>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4 ">Arpit Mittal<i class="material-icons right">close</i></span>
+                    <div class="mgt20">
+                    <a href="#" class="btn ">Block</a>
+                    <a href="#" class="btn red">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col s12 m6 l4 ">
+            <div class="card sticky-action">
+                <div class="card-content">
+                    <span class="card-title ">Arpit Mittal </span>
+                   <div class="grey-text text-darken-2">
+                    <p>digamber@roofpik.com</p>
+                    <p>09654860689</p>
+                    <p>Leads Used  -<b> Total 999</b></p>
+                    <p>30 Days Leads</p>
+                    <p>Status - <span class="teal-text text-lighten-1">Active</span> <span class="grey-text">Inactive</span></p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="#">Usage</a>
+                    <a href="#">Login</a>
+                    <i class="material-icons right activator">more_vert</i>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4 ">Arpit Mittal<i class="material-icons right">close</i></span>
+                    <div class="mgt20">
+                    <a href="#" class="btn ">Block</a>
+                    <a href="#" class="btn red">Delete</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal Trigger -->
     <!-- Modal Structure -->
-    <div id="addnewmodal" class="modal">
+    <div id="addnewmodal" class="modal popwdh">
         <div class="modal-content">
-            <h4>Add New User</h4>
-            <div class="row">
-                <div class="input-field col s6">
+            <h5>Add New User</h5>
+            <div class="row mgbn">
+                <div class="input-field col s12">
                     <input id="first_name" type="text" class="validate" ng-model="data.name">
                     <label for="first_name">First Name</label>
                 </div>
-                <div class="input-field col s6">
+                 <div class="input-field col s12">
+                    <input id="emailid" type="text" class="validate">
+                    <label for="emailid">Email Id</label>
+                </div>
+                <div class="input-field col s12">
                     <input id="mobile" type="text" class="validate" ng-model="data.key">
                     <label for="mobile">Mobile Number</label>
                 </div>
             </div>
         </div>
         <div class="modal-footer">
-            <a class="modal-action modal-close waves-effect waves-green btn-flat" ng-click="addMember()">Add</a>
+            <a class="modal-action modal-close waves-effect waves-green btn" ng-click="addMember()">Add</a>
             <a class="modal-action modal-close waves-effect waves-green btn-flat" ng-click="cancelAddMember()">Cancel</a>
         </div>
     </div>
