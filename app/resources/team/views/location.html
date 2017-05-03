@@ -1,0 +1,77 @@
+<div>
+    <div class="row">
+        <div class="container">
+            <div class="row relative">
+                <div class="col s12">
+                    <h4 class="mgt30 mgbn">Location</h4>
+                    <div class="row mgt30">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <input type="text" id="location-input" class="autocomplete">
+                                    <label for="location-input">Name of Project</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input type="text" id="project-input" class="autocomplete">
+                                    <label for="project-input">Location</label>
+                                </div>
+                                 <div class="input-field col s4">
+                                    <input type="text" id="project-input" class="autocomplete">
+                                    <label for="project-input">No.  Of Review</label>
+                                </div>
+                            </div>
+                            <table class="striped responsive-table ft13">
+                                <thead>
+                                    <tr>
+                                        <th>User Name</th>
+                                        <th>Date</th>
+                                        <th>Title</th>
+                                        <th>Rating</th>
+                                        <th>Validated</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Arpit Mittal</td>
+                                        <td>12/01/2017</td>
+                                        <td>Lorem Ipsum</td>
+                                        <td>4</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Digamber Sharma</td>
+                                        <td>12/04/2017</td>
+                                        <td>Lorem Ipsum</td>
+                                        <td>4</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sharma</td>
+                                        <td>12/01/2017</td>
+                                        <td>Lorem Ipsum</td>
+                                        <td>4</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $('input.autocomplete').autocomplete({
+        data: {
+            "Apple": null,
+            "Microsoft": null,
+            "Google": 'http://placehold.it/250x250'
+        },
+        limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+        onAutocomplete: function(val) {
+            // Callback function when value is autcompleted.
+        },
+        minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+    });
+    </script>
+</div>

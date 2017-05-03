@@ -65,6 +65,21 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
         templateUrl: 'resources/team/views/invoice.html'
        
     });
+    $stateProvider.state('review-details', {
+        url: '/review-details',
+        templateUrl: 'resources/team/views/review-details.html'
+       
+    });
+     $stateProvider.state('projects', {
+        url: '/projects',
+        templateUrl: 'resources/team/views/projects.html'
+       
+    });
+     $stateProvider.state('location', {
+        url: '/location',
+        templateUrl: 'resources/team/views/location.html'
+       
+    });
 
 
     $urlRouterProvider.otherwise('/');

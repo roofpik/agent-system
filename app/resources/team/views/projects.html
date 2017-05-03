@@ -1,0 +1,65 @@
+<div>
+    <div class="row">
+        <div class="container">
+            <div class="row relative">
+                <div class="col s12">
+                    <h4 class="mgt30 mgbn">Projects</h4>
+                    <div class="row mgt30">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input type="text" id="location-input" class="autocomplete">
+                                    <label for="location-input">Location</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="text" id="project-input" class="autocomplete">
+                                    <label for="project-input">Projects</label>
+                                </div>
+                            </div>
+                            <table class="striped responsive-table ft13">
+                                <thead>
+                                    <tr>
+                                        <th>Project Name</th>
+                                        <th>Location</th>
+                                        <th>Reviews</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#/location" class="loca_link">Alvin</a></td>
+                                        <td>Eclair</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/location" class="loca_link">Alan</a></td>
+                                        <td>Jellybean</td>
+                                        <td>$3.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/location" class="loca_link">Jonathan</a></td>
+                                        <td>Lollipop</td>
+                                        <td>$7.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $('input.autocomplete').autocomplete({
+        data: {
+            "Apple": null,
+            "Microsoft": null,
+            "Google": 'http://placehold.it/250x250'
+        },
+        limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+        onAutocomplete: function(val) {
+            // Callback function when value is autcompleted.
+        },
+        minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+    });
+    </script>
+</div>

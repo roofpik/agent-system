@@ -7,33 +7,74 @@
   main {
       flex: 1 0 auto;
   }
-  .mgan{margin:0px;}
-  .mgbn{margin-bottom: 0;}
+  .mgan{margin:0px !important;;}
+
   
 .bodb{border-bottom: 1px solid #ddd;}
 .bodt{border-top: 1px solid #ddd;}
-
-.pdb10{padding-bottom: 10px;}
-.pdt10{padding-top: 10px;}
-.pdl10{padding-left: 10px;}
-.pdr10{padding-right: 10px;}
-
-.pda10{padding: 10px;}
-.mgtn{margin-top: 0;}
-
+hr {
+    border-top: solid 1px #ddd !important;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+.input-field label {
+    font-size: 13px !important;
+}
+label {
+    font-size: 13px !important;
+}
+.ft11 {
+    font-size: 11px !important;
+}
+.pda20{padding: 20px!important;}
+.pdb10{padding-bottom: 10px !important;}
+.pdt10{padding-top: 10px !important;;}
+.pdl10{padding-left: 10px !important;;}
+.pdr10{padding-right: 10px !important;;}
+.pda10{padding: 10px !important;;}
+.mgtn{margin-top: 0 !important;;}
 .b{font-weight: 700;}
 .team_card .card .card-title, .leads_card .card .card-title {font-size: 20px !important; font-weight: 400;}
-.ft13{font-size: 13px !important;}
+
 .ft15{font-size: 15px !important}
 .mgbn{margin-bottom: 0px !important;}
-  .mgt20{margin-top: 20px;}
+.mgln{margin-left: 0px !important;}
+.mgrn{margin-right: 0px !important;}
+.mgt20{margin-top: 20px !important;}
+.mgb10{margin-bottom: 10px !important;}
 .logo{width: 30px; margin: 15px;}
 .sld_logo img{ width: 100px; margin-top: 20px; }
 .sld_logo:hover{background-color: transparent !important;}
 .trans_fm{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9; width: 340px;}
 .sld_ft{position: absolute; bottom:60px; left:0; width: 100%;}
 .popwdh{width: 400px; max-width: 400px}
+.ftw100 {
+    font-weight: 300;
+}
+.btn, .btn:hover, .btn:focus {
+    box-shadow: none;
+}
+.btn {
+    padding: 0 15px;
+}
+
+.relative {
+    position: relative;
+}
+
 .block{display: block;}
+.mgt30{margin-top: 30px;}
+
+.ft18 {
+    font-size: 18px !important;
+}
+
+.pdln {
+    padding-left: 0px !important;
+}
+.ft13{font-size: 13px !important;}
+.loca_link{color: #333;}
 
 
  @media screen and (min-width: 0px) and (max-width: 600px){
