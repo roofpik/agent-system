@@ -77,6 +77,14 @@ label {
 .loca_link{color: #333;}
 
 
+.search-results{position: absolute; top: 45px; width: 96%; left: 10px; z-index: 9; border:1px solid #ddd; 
+    max-height: 250px !important;
+    overflow-y: auto;}
+.proul ul li{ line-height: 30px; height: 30px; font-size: 13px; padding: 0 10px; overflow:hidden;}
+.proul ul li:nth-child(2n){background-color: #fafafa;}
+.proul ul li:hover{background-color: #eee; cursor: pointer;}
+
+
  @media screen and (min-width: 0px) and (max-width: 600px){
 .logo{margin: 10px;}
 .trans_fm{width: 96%;}

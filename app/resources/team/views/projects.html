@@ -8,12 +8,50 @@
                         <div class="col s12">
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <input type="text" id="location-input" class="autocomplete">
+                                    <input type="text" id="location-input" class="inp_showdiv autocomplete">
                                     <label for="location-input">Location</label>
+                                    <div class="search-results white proul">
+                                        <ul class="mgan">                                          
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="input-field col s6">
-                                    <input type="text" id="project-input" class="autocomplete">
+                                    <input type="text" id="project-input" class="">
                                     <label for="project-input">Projects</label>
+                                     <div class="search-results white proul">
+                                        <ul class="mgan">                                          
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                            <li>
+                                                lorem ipsum sub lorem ipsum
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <table class="striped responsive-table ft13">
@@ -48,18 +86,4 @@
             </div>
         </div>
     </div>
-    <script>
-    $('input.autocomplete').autocomplete({
-        data: {
-            "Apple": null,
-            "Microsoft": null,
-            "Google": 'http://placehold.it/250x250'
-        },
-        limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
-        onAutocomplete: function(val) {
-            // Callback function when value is autcompleted.
-        },
-        minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
-    });
-    </script>
 </div>
