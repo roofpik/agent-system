@@ -1,30 +1,97 @@
-<nav>
-    <div class="nav-wrapper white">
-        <a href="#!" class=""><img src="images/general/logoicon.png" alt="Roofpik Logo" class="logo"></a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse grey-text"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html" class="grey-text">Sass</a></li>
-            <li><a href="badges.html" class="grey-text">Components</a></li>
-            <li><a href="collapsible.html" class="grey-text">Javascript</a></li>
-            <li><a href="mobile.html" class="grey-text">Mobile</a></li>
-            <li><a href="/#/team" class="grey-text">Team</a></li>
-            <li><a ng-click="logout()" class="grey-text">Logout</a></li>
-
-        </ul>
-        <div class="side-nav" id="mobile-demo">
-        <ul>
-        <li>  <a href="#!" class="sld_logo"><img src="images/general/logo.png" alt="Roofpik Logo"></a></li>
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <div class="sld_ft">
-        <ul>  
-            <li><a href="collapsible.html">Terms & Conditions</a></li>
-            <li><a href="mobile.html">Privacy Policy</a></li>
-        </ul>
+<div>
+    <div class="navbar headerfix">
+        <nav class="white boxsdn">
+            <div class="nav-wrapper">
+                <div class="row mgbn">
+                    <div class="col no-padding">
+                        <a href="#" data-activates="slide-out" class="button-collapse show-on-large grey-text left">
+                            <i class="material-icons">menu</i></a>
+                        <a href="#/home" class="rooflogo left"><img src="images/general/logoicon.png" "> </a>
+                    </div>
+                    <ul class="right">
+                   
+                    <li ng-hide="loginStatus">
+                            <a href="#login_signup_popup" class="btnhd mgln">
+                                Login/Sign Up</a>
+                        </li>
+                        <li class="btnhd_prof" ng-show="loginStatus">
+                            <a href="" class="btnhd">
+                                <img class="display-img left" src="images/general/noImage.png"> Dg Sharma
+                            </a>                           
+                        </li>
+                    </ul>
+                  
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="slide-out" class="side-nav over_hidden">
+        <div class="row mgan">
+            <a href="#/home" class="sld_logo mgt10 pdl30"><img src="images/general/logo.png"></a>
         </div>
+        <div class="row over_auto mgbn mgt30">
+            <ul>
+                <li><a href="#/registration" class="">Registration</a></li>
+                <li><a href="">Payments</a></li>
+                <li><a href="">Account Balance</a></li>            
+                <li><a href="">Closure Status/Leads</a></li>
+                <li><a href="">Contact us</a></li>
+           
+            </ul>
+        </div>
+          <div class="navfooter wd100 grey lighten-4 pdt10">
+            <div class="row mgbn">
+                <div class="col left pdt10 left-align">
+                    <h6 class="grey-text mgtn">Follow us</h6>
+                </div>
+                <div class="col right right-align">
+                    <a class="right" href="https://www.facebook.com/roofpik" target="_blank">
+                        <img src="images/general/facebook.png">
+                    </a>
+                    <a class="right" href="https://www.linkedin.com/company/roofpik?trk=job_view_topcard_company_name" target="_blank">
+                        <img src="images/general/linked-in.png">
+                    </a>
+                    <a class="right" href="https://www.twitter.com/roofpik" target="_blank">
+                        <img src="images/general/twitter.png">
+                    </a>
+                    <a class="right" href="https://www.instagram.com/roofpik1/" target="_blank">
+                        <img src="images/general/insta.png">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright center pdt10 pdb10 grey lighten-3">
+                <div class="ft12 grey-text">
+                    © AlphaBinary Technologies Pvt Ltd
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="login_signup_popup" class="modal">
+        <div class="modal-content pda20 white">
+            <section>
+                <div class="row mgbn">
+                    <div class="col s12 pdb10 mgt10">
+                        <a href="#!" class="block grey-text right review-m  modal-close"><i class="material-icons">close</i></a>
+                        <h3 class="ft15   grey-text text-darken-2"> <i class="material-icons grey-text mgmnst3 ft20 left mgr10">lock_outline</i> Login / Sign Up</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center">
+                        <a href="" class="btn btn-full btfacebook btn-large b blue darken-4 white-text">
+                            <img src="images/general/facebook1.png" class="left facebookicon"> Log in with Facebook
+                        </a>
+                        <div class="row mgln mgrn pdt30">
+                            <hr class="mgmnsb10">
+                            <span class="inline white pdl10 pdr10 grey-text"> OR</span>
+                        </div>
+                        <a href="" class="btn white btn-large btgoogle b btn-full bodall grey-text text-darken-2"><img src="images/general/googleplusicon.png" class="left icongoogle"> Log in with Google</a>
+                        <a href="#/registration" class="btn btn-large btn-full btn-primary mgt30 b"><i class="material-icons left">lock_outline</i> Sign Up</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-</nav>
+    
+</div>

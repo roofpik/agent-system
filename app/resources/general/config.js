@@ -31,10 +31,26 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
     // });
 
 
-    $stateProvider.state('home', {
+
+// new page start
+    $stateProvider.state('registration', {
+        url: '/registration',
+        templateUrl: 'resources/general/views/registration.html'
+    });
+     $stateProvider.state('home', {
         url: '/',
         templateUrl: 'resources/home/views/home.html'
     });
+      $stateProvider.state('owner-details', {
+        url: '/owner-details',
+        templateUrl: 'resources/home/views/owner-details.html'
+    });
+
+// new page end
+
+
+
+
 
     $stateProvider.state('team', {
         url: '/team/home',
