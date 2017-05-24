@@ -1,82 +1,24 @@
 <div>
     <section class="mgt65 grey lighten-5">
         <div>
-            <div class="side-nav hide-on-large-only" id="slide-out1">
-                <form>
-                    <div class="row filter-heading">
-                        <div class="col s12">
-                            <span> Filters </span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row price-filter">
-                        <div class="col s12">
-                            <h3 class="ft14 b">Rent</h3>
-                        </div>
-                        <div class="col s12">
-                            <div id="price2"></div>
-                        </div>
-                        <div class="col s6" ng-hide="true">
-                            <input id="minP" placeholder="₹ Min" type="number" ng-change="minChange()" ng-model="data.rmin" />
-                        </div>
-                        <div class="col s6" ng-hide="true">
-                            <input id="maxP" placeholder="₹ Max" type="number" ng-change="maxChange()" ng-model="data.rmax" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <h3 class="ft14 b">Project Categories</h3>
-                        </div>
-                        <div class="col s12 mgt5" ng-repeat="item in categories">
-                            <input type="checkbox" ng-model="selected.category[item.id]" id="{{item.id}}" ng-change="addFilter(item.id, 'category')" class="filled-in" />
-                            <label class="ft11" for="{{item.id}}">{{item.name}}</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <h3 class="ft14 b">Bedroom</h3>
-                        </div>
-                        <div class="col s6 mgt5" ng-repeat="item in [1, 2, 3, 4, 5, 6]">
-                            <input type="checkbox" class="filled-in" ng-model="selected.bhk[item]" ng-change="addFilter(item, 'bhk')" id="{{item}}" />
-                            <label class="ft11" for="{{item}}">{{item}} BHK</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <h3 class="ft14 b">Property Types</h3>
-                        </div>
-                        <div class="col s12 mgt5" ng-repeat="item in propertyTypes">
-                            <input type="checkbox" ng-model="selected.ptype[item.id]" id="{{item.id}}" ng-change="addFilter(item.id, 'ptype')" class="filled-in" />
-                            <label class="ft11" for="{{item.id}}">{{item.name}}</label>
-                        </div>
-                    </div>
-                    <div class="row  mgbn">
-                        <div class="col s12">
-                            <span class="more-filter" ng-click="moreFilters()">More Filters</span>
-                        </div>
-                    </div>
-                    <!-- Modal Trigger -->
-                    <!-- Modal Structure -->
-                </form>
-            </div>
             <div class="row mgt45">
                 <section>
                     <div class="row list-heading">
                         <div class="col s12 pdl30 xspdl20">
-                            <h5 class="mgbn">  Projects in Gurgaon  <a href="#" data-activates="slide-out1" class="right flticon button-collapse1 hide-on-large-only"><i class="material-icons">menu</i></a></h5>
+                            <h5 class="mgbn"> Owner Details  <a href="#" data-activates="slide-out1" class="right flticon button-collapse1 hide-on-large-only"><i class="material-icons">menu</i></a></h5>
                         </div>
                         <div class="row linkroot mgan">
                             <nav class="bgtrans pdl20 xspdl10">
                                 <div class="nav-wrapper bgtrans">
                                     <div class="col s12">
                                         <a href="/#/home" class="breadcrumb">Home</a>
-                                        <a href="" class="breadcrumb">Projects</a>
+                                        <a href="" class="breadcrumb">Owner Details</a>
                                     </div>
                                 </div>
                             </nav>
                         </div>
                     </div>
-                    <div class="row pdl30 pdr30 xspdl10 xspdrn">
+                    <div class="row pdl30 pdr30 xspdln xspdrn">
                         <div id="boxfilterlist" class="col s2 m3 l3 hide-on-med-and-down ">
                             <form>
                                 <div class="row filter-heading">
@@ -85,17 +27,17 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="row price-filter">
+                                <div class="row mgbn">
                                     <div class="col s12">
                                         <h3 class="ft14 b">Rent</h3>
                                     </div>
                                     <div class="col s12">
                                         <div id="price"></div>
                                     </div>
-                                    <div class="col s6" ng-hide="true">
+                                    <div class="col s6">
                                         <input id="minP" placeholder="₹ Min" type="number" ng-change="minChange()" ng-model="data.rmin" />
                                     </div>
-                                    <div class="col s6" ng-hide="true">
+                                    <div class="col s6">
                                         <input id="maxP" placeholder="₹ Max" type="number" ng-change="maxChange()" ng-model="data.rmax" />
                                     </div>
                                 </div>
@@ -103,86 +45,503 @@
                                     <div class="col s12">
                                         <h3 class="ft14 b">Project Categories</h3>
                                     </div>
-                                    <div class="col s12 mgt5" ng-repeat="item in categories">
-                                        <input type="checkbox" ng-model="selected.category[item.id]" id="{{item.id}}" ng-change="addFilter(item.id, 'category')" class="filled-in" />
-                                        <label class="ft11" for="{{item.id}}">{{item.name}}</label>
-                                     
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="best" class="filled-in" />
+                                        <label class="ft11" for="best">Best Amenities</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="Luxury" class="filled-in" />
+                                        <label class="ft11" for="Luxury">Luxury</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="Affordable" class="filled-in" />
+                                        <label class="ft11" for="Affordable">Affordable</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="Ultra" class="filled-in" />
+                                        <label class="ft11" for="Ultra">Ultra Luxury</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="Pet" class="filled-in" />
+                                        <label class="ft11" for="Pet">Pet Friendly</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="Downtown" class="filled-in" />
+                                        <label class="ft11" for="Downtown">Downtown</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="Bachelors" class="filled-in" />
+                                        <label class="ft11" for="Bachelors">Bachelors</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" id="Senior" class="filled-in" />
+                                        <label class="ft11" for="Senior">Senior Living</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col s12">
                                         <h3 class="ft14 b">Bedroom</h3>
                                     </div>
-                                    <div class="col s6 mgt5" ng-repeat="item in [1, 2, 3, 4, 5, 6]">
-                                        <input type="checkbox" class="filled-in" ng-model="selected.bhk[item]" ng-change="addFilter(item, 'bhk')" id="{{item}}" />
-                                        <label class="ft11" for="{{item}}">{{item}} BHK</label>
+                                    <div class="col s6 mgt5">
+                                        <input type="checkbox" class="filled-in" id="bhk1" />
+                                        <label class="ft11" for="bhk1">1 BHK</label>
+                                    </div>
+                                    <div class="col s6 mgt5">
+                                        <input type="checkbox" class="filled-in" id="bhk2" />
+                                        <label class="ft11" for="bhk2">2 BHK</label>
+                                    </div>
+                                    <div class="col s6 mgt5">
+                                        <input type="checkbox" class="filled-in" id="bhk3" />
+                                        <label class="ft11" for="bhk3">3 BHK</label>
+                                    </div>
+                                    <div class="col s6 mgt5">
+                                        <input type="checkbox" class="filled-in" id="bhk4" />
+                                        <label class="ft11" for="bhk4">4 BHK</label>
+                                    </div>
+                                    <div class="col s6 mgt5">
+                                        <input type="checkbox" class="filled-in" id="bhk5" />
+                                        <label class="ft11" for="bhk5">5 BHK</label>
+                                    </div>
+                                    <div class="col s6 mgt5">
+                                        <input type="checkbox" class="filled-in" id="bhk5p" />
+                                        <label class="ft11" for="bhk5p">5+ BHK</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col s12">
                                         <h3 class="ft14 b">Property Types</h3>
                                     </div>
-                                    <div class="col s12 mgt5" ng-repeat="item in propertyTypes">
-                                        <input type="checkbox" ng-model="selected.ptype[item.id]" id="{{item.id}}" ng-change="addFilter(item.id, 'ptype')" class="filled-in" />
-                                        <label class="ft11" for="{{item.id}}">{{item.name}}</label>
-                                       
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" class="filled-in" id="Apartments" />
+                                        <label class="ft11" for="Apartments">Apartments</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" class="filled-in" id="Villas" />
+                                        <label class="ft11" for="Villas">Villas</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" class="filled-in" id="Penthouse" />
+                                        <label class="ft11" for="Penthouse">Penthouse</label>
+                                    </div>
+                                    <div class="col s12 mgt5">
+                                        <input type="checkbox" class="filled-in" id="Rowhouse" />
+                                        <label class="ft11" for="Rowhouse">Rowhouse</label>
                                     </div>
                                 </div>
                                 <div class="row  mgbn">
                                     <div class="col s12">
-                                        <span class="more-filter" ng-click="moreFilters()">More Filters</span>
+                                        <span class="more-filter">More Filters</span>
                                     </div>
                                 </div>
                                 <!-- Modal Trigger -->
                                 <!-- Modal Structure -->
                             </form>
                         </div>
-                        <div class="col s12 m12 l6 pdr30 xspdr20 projList">
+                        <div class="col s12 m12 l7 pdr30 xspdr20 projList">
                             <div class="col s12 card pdt10 pdbn pdln pdrn white">
                                 <div class="row relative mgb10">
-                                    <div class="col s3 proj-thumb">
+                                    <div class="col s12 m3 proj-thumb">
                                         <a href=""> <img src="images/vatika-city-main-photo537-s.jpg" class="responsive-img"></a>
                                     </div>
-                                    <div class="col s6 pdln xspdl10">
+                                    <div class="col s12 m6 pdln xspdl10 xsmgb30">
                                         <div class="ft12">16 May 2017</div>
                                         <h2 class="ft18 b mgbn mgt5 truncate"><a  href="" class="red-text"> Project Name</a></h2>
                                         <h6 class="mgbn ft13 truncate text-darken-2 mgt5">
                                 <a href="" class="grey-text"> Golf Course Road, Sector 42</a></h6>
                                         <div class="mgt5 ft12 b">3BHK ( 2450 sq. ft. )</div>
                                     </div>
-                                    <div class="col s3 pdln right-align">
+                                    <div class="col s12 m3 pdln right-align">
                                         <span class="pdl10  b">Arpit Mittal</span>
                                         <div class="ft11 grey-text mgt5">09xxxxxxxxx</div>
                                         <div class="ft11 grey-text">xxxxxxxx@gmail.com</div>
-                                        <a class="btn btn-flat ft12 b" href=""><i></i> Gallery</a>
+                                        <a onclick="$('.gal_dtl') .css ('display','block')" class="ft12 b green-text gall_btn pointer" href=""> <i class="material-icons left">photo_library</i> Gallery</a>
                                     </div>
                                 </div>
                                 <div class="row mgan bodt">
-                                    <div class="col s3 listp dgrey-text pdt10  fd-load">
+                                    <div class="col s5 m4 listp dgrey-text pdt10  fd-load">
                                         <p>Rent:</p>
                                         <p>Available from:</p>
                                         <p>Property Type:</p>
                                         <p>Floor:</p>
                                     </div>
-                                    <div class="col s8 listp vgrey-text pdln pdt10 pdb10 pdrn  fd-load">
+                                    <div class="col s7 m8 listp vgrey-text pdln pdt10 pdb10 pdrn  fd-load">
                                         <p>₹10,000</p>
                                         <p>21st Jun 2017</p>
                                         <p>Apartment</p>
                                         <p>7th </p>
                                     </div>
                                 </div>
-                                <div class="row bodt mgbn center grey lighten-5">
-                                    <a class="col s4 m4 grey-text text-darken-2 pda10 listbtn bod-right">View Details</a>
-                                    <a class="col s12 m4 grey-text text-darken-2 pda10 listbtn bod-right" >View Details</a>
-                                    <a href="" class="col s4 m4 grey-text b listbtn_active pda10 hide-on-small-only ">Write Review</span></a>
+                                <div class="row bodt mgbn center grey lighten-5 ftcard">
+                                    <a onclick="$('#viewdtails') .css ('display','block')" class="col s12 m4 grey-text text-darken-2 b pdt20 listbtn bdrf">
+                                    View Details</a>
+                                    <button data-target="buypopupExclusive" class="col s12 m4 grey-text text-darken-2 pda10 listbtn btnflat bdrf">
+                                        <b> Buy Exclusive</b>
+                                        <br> Cost Rs 500</button>
+                                    <button data-target="buypopupShared" class="col s12 m4 grey-text text-darken-2 listbtn btnflat  pda10"><b>Buy Shared</b>
+                                        <br> <span>Cost Rs 250</span>
+                                    </button>
                                 </div>
                             </div>
-                           
+                           <div class="col s12 card pdt10 pdbn pdln pdrn white">
+                                <div class="row relative mgb10">
+                                    <div class="col s12 m3 proj-thumb">
+                                        <a href=""> <img src="images/vatika-city-main-photo537-s.jpg" class="responsive-img"></a>
+                                    </div>
+                                    <div class="col s12 m6 pdln xspdl10 xsmgb30">
+                                        <div class="ft12">16 May 2017</div>
+                                        <h2 class="ft18 b mgbn mgt5 truncate"><a  href="" class="red-text"> Project Name</a></h2>
+                                        <h6 class="mgbn ft13 truncate text-darken-2 mgt5">
+                                <a href="" class="grey-text"> Golf Course Road, Sector 42</a></h6>
+                                        <div class="mgt5 ft12 b">3BHK ( 2450 sq. ft. )</div>
+                                    </div>
+                                    <div class="col s12 m3 pdln right-align">
+                                        <span class="pdl10  b">Arpit Mittal</span>
+                                        <div class="ft11 grey-text mgt5">09xxxxxxxxx</div>
+                                        <div class="ft11 grey-text">xxxxxxxx@gmail.com</div>
+                                        <a onclick="$('.gal_dtl') .css ('display','block')" class="ft12 b green-text gall_btn pointer" href=""> <i class="material-icons left">photo_library</i> Gallery</a>
+                                    </div>
+                                </div>
+                                <div class="row mgan bodt">
+                                    <div class="col s5 m4 listp dgrey-text pdt10  fd-load">
+                                        <p>Rent:</p>
+                                        <p>Available from:</p>
+                                        <p>Property Type:</p>
+                                        <p>Floor:</p>
+                                    </div>
+                                    <div class="col s7 m8 listp vgrey-text pdln pdt10 pdb10 pdrn  fd-load">
+                                        <p>₹10,000</p>
+                                        <p>21st Jun 2017</p>
+                                        <p>Apartment</p>
+                                        <p>7th </p>
+                                    </div>
+                                </div>
+                                <div class="row bodt mgbn center grey lighten-5 ftcard">
+                                    <a onclick="$('#viewdtails') .css ('display','block')" class="col s12 m4 grey-text text-darken-2 b pdt20 listbtn bdrf">
+                                    View Details</a>
+                                    <button data-target="buypopupExclusive" class="col s12 m4 grey-text text-darken-2 pda10 listbtn btnflat bdrf">
+                                        <b> Buy Exclusive</b>
+                                        <br> Cost Rs 500</button>
+                                    <button data-target="buypopupShared" class="col s12 m4 grey-text text-darken-2 listbtn btnflat  pda10"><b>Buy Shared</b>
+                                        <br> <span>Cost Rs 250</span>
+                                    </button>
+                                </div>
+                            </div>
+                           <div class="col s12 card pdt10 pdbn pdln pdrn white">
+                                <div class="row relative mgb10">
+                                    <div class="col s12 m3 proj-thumb">
+                                        <a href=""> <img src="images/vatika-city-main-photo537-s.jpg" class="responsive-img"></a>
+                                    </div>
+                                    <div class="col s12 m6 pdln xspdl10 xsmgb30">
+                                        <div class="ft12">16 May 2017</div>
+                                        <h2 class="ft18 b mgbn mgt5 truncate"><a  href="" class="red-text"> Project Name</a></h2>
+                                        <h6 class="mgbn ft13 truncate text-darken-2 mgt5">
+                                <a href="" class="grey-text"> Golf Course Road, Sector 42</a></h6>
+                                        <div class="mgt5 ft12 b">3BHK ( 2450 sq. ft. )</div>
+                                    </div>
+                                    <div class="col s12 m3 pdln right-align">
+                                        <span class="pdl10  b">Arpit Mittal</span>
+                                        <div class="ft11 grey-text mgt5">09xxxxxxxxx</div>
+                                        <div class="ft11 grey-text">xxxxxxxx@gmail.com</div>
+                                        <a onclick="$('.gal_dtl') .css ('display','block')" class="ft12 b green-text gall_btn pointer" href=""> <i class="material-icons left">photo_library</i> Gallery</a>
+                                    </div>
+                                </div>
+                                <div class="row mgan bodt">
+                                    <div class="col s5 m4 listp dgrey-text pdt10  fd-load">
+                                        <p>Rent:</p>
+                                        <p>Available from:</p>
+                                        <p>Property Type:</p>
+                                        <p>Floor:</p>
+                                    </div>
+                                    <div class="col s7 m8 listp vgrey-text pdln pdt10 pdb10 pdrn  fd-load">
+                                        <p>₹10,000</p>
+                                        <p>21st Jun 2017</p>
+                                        <p>Apartment</p>
+                                        <p>7th </p>
+                                    </div>
+                                </div>
+                                <div class="row bodt mgbn center grey lighten-5 ftcard">
+                                    <a onclick="$('#viewdtails') .css ('display','block')" class="col s12 m4 grey-text text-darken-2 b pdt20 listbtn bdrf">
+                                    View Details</a>
+                                    <button data-target="buypopupExclusive" class="col s12 m4 grey-text text-darken-2 pda10 listbtn btnflat bdrf">
+                                        <b> Buy Exclusive</b>
+                                        <br> Cost Rs 500</button>
+                                    <button data-target="buypopupShared" class="col s12 m4 grey-text text-darken-2 listbtn btnflat  pda10"><b>Buy Shared</b>
+                                        <br> <span>Cost Rs 250</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
-               
             </div>
         </div>
     </section>
+    <!-- popup vew detail start -->
+    <div id="viewdtails">
+        <div class="row">
+            <div class="col s12 m12 l10 offset-l1 mgt30 pda20 white">
+                <h5 class="mgtn">Details <i class="material-icons right pointer"  onclick="$('#viewdtails') .css ('display','none')">close</i></h5>
+                <div class="row ondt autoscroll">
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">list</i> Configuration</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> 3 Bedroom, 4Bathroom, 3 Balconies, 1 Servent</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">list</i> Rent</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Rs 30000
+                            <br> Maintenance Rs. 4000/- (Monthly), Deposit Rs. 60000
+                        </p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">location_city</i> Residential Type</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Apartment</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">flip_to_back</i> Area</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> 2020 Sq. Ft.</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">location_on</i> Address</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Flat 202, Floor 2, Tower B, Vipul Green, Sector 48, Gurgaon</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">weekend</i> Furnishing</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Fully Furnished</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">person</i> Available For</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Family</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">date_range</i> Available From</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> 15 May 2017</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">local_parking</i> Parking</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Covered - 1, Open - 1 </p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">power</i> Power Backup</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Full</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">face</i> Facing</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> North East</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">spa</i> Overlooking</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Park</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">check_box_outline_blank</i> Pets</h5>
+                        <p class="green-text text-darken-2 ft15 ht30">Allowed</p>
+                    </div>
+                    <div class="col s12 m6 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">group</i> Preferred Tenant Profile</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> MNC Working</p>
+                    </div>
+                    <div class="col s12 m12 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">subject</i> Discription</h5>
+                        <p class="green-text text-darken-2 ft15 ht30"> Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. Learn more about material design and our process for making these icons in the system icons section of the material design guidelines. </p>
+                    </div>
+                    <div class="col s12 m12 bdalight">
+                        <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">view_comfy</i> Furnished</h5>
+                        <div class="row">
+                                        <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/ac.png" alt="">
+                                            <span class="ht45 block"> 5 AC</span>
+                                        </div>
+                                        <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/bed.png" alt="">
+                                            <span class="ht45 block">  4 Bed</span>
+                                        </div>
+                                        <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/chimney.png" alt="">
+                                            <span class="ht45 block">  1 Chimney</span>
+                                        </div>
+                                        <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/curtain.png" alt="">
+                                            <span class="ht45 block">  1 Curtains</span>
+                                        </div>
+                                        <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/Dining.png" alt="">
+                                            <span class="ht45 block">  1 Dining Table</span>
+                                        </div>
+                                        <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/ex_fan.png" alt="">
+                                            <span class="ht45 block">  1 Exhaust Fan</span>
+                                        </div>
+                                        <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/fan.png" alt="">
+                                            <span class="ht45 block">  6 Fan</span>
+                                        </div>
+
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/Geyser.png" alt="">
+                                            <span class="ht45 block">  4 Geyser</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/modular-k.png" alt="">
+                                            <span class="ht45 block">  1 Modular Kitchen</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/lights.png" alt="">
+                                            <span class="ht45 block">  8 Lights</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/Appliances.png" alt="">
+                                            <span class="ht45 block">  1 Microwave</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/Refrigerator.png" alt="">
+                                            <span class="ht45 block">  1 Fridge</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/sofa.png" alt="">
+                                            <span class="ht45 block">  1 sofa</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/gas_stove.png" alt="">
+                                            <span class="ht45 block">  1 Stove</span>
+                                        </div>
+
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/Television.png" alt="">
+                                            <span class="ht45 block">  2 TV</span>
+                                        </div>
+
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/lift.png" alt="">
+                                            <span class="ht45 block">  4 Wardrobe</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/Washer.png" alt="">
+                                            <span class="ht45 block">  1 Washing Machine</span>
+                                        </div>
+                                         <div class="col s2 wd20p pda10 imgic_amn center">
+                                            <img src="images/icons/water3.png" alt="">
+                                            <span class="ht45 block">  1 Water Purifier</span>
+                                        </div>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end popup -->
+    <!-- gallery -->
+    <div class="gal_dtl" id="gallery">
+    <div class="row">
+        <div class="col s12 m12 l8 offset-l2 mgt30 pda20 white">
+            <h5 class="ft15 mgtn b pdb10">Gallery <i class="material-icons right pointer"  onclick="$('.gal_dtl') .css ('display','none')">close</i></h5>
+            <div class="row mgan ondt autoscroll">
+                <div class="gallery">
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                     <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                     <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                     <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- gallery end -->
+        <!-- popup buy start -->
+    <div id="buypopupExclusive" class="modal wdbuy white">
+        <div class="modal-content pda20">
+            <h5 class="ft15 mgtn b pdb10">Exclusive Leads <i class="material-icons right pointer modal-action modal-close">close</i></h5>
+            <div class="row relative mgb10 bodb pdb10">
+                <div class="col s12 m3 proj-thumb pdln">
+                    <a href=""> <img src="images/vatika-city-main-photo537-s.jpg" class="responsive-img"></a>
+                </div>
+                <div class="col s12 m6 pdln xspdl10">
+                    <div class="ft12">16 May 2017</div>
+                    <h2 class="ft18 b mgbn mgt5 truncate"><a  href="" class="red-text"> Project Name</a></h2>
+                    <h6 class="mgbn ft13 truncate text-darken-2 mgt5">
+                                <a href="" class="grey-text"> Golf Course Road, Sector 42</a></h6>
+                    <div class="mgt5 ft12 b">3BHK ( 2450 sq. ft. )</div>
+                </div>
+                <div class="col s12 m3 pdrn right-align">
+                    <span class="pdl10  b">Arpit Mittal</span>
+                    <div class="ft11 grey-text mgt5">09xxxxxxxxx</div>
+                    <div class="ft11 grey-text">xxxxxxxx@gmail.com</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 ft15 pdln">
+                    <p> Current Balance</p>
+                    <p>Cost</p>
+                    <p>Balance</p>
+                </div>
+                <div class="col s6 b ft15 pdrn">
+                    <p>5,850 Rs</p>
+                    <p>500 Rs</p>
+                    <p class="bodt pdt10">5,350 Rs</p>
+                </div>
+            </div>
+            <div class="row bodt center">
+                <h5 class="ft17 b green-text">Would you like to confirm ?</h5>
+                <a href="#!" class="btn">Yes</a>
+                <a class="modal-action modal-close btn btn-primary pointer">No</a>
+            </div>
+        </div>
+    </div>
+    <div id="buypopupShared" class="modal wdbuy white">
+        <div class="modal-content pda20">
+            <h5 class="ft15 mgtn b pdb10">Shared Leads <i class="material-icons right pointer modal-action modal-close">close</i></h5>
+            <div class="row relative mgb10 bodb pdb10">
+                <div class="col s12 m3 proj-thumb pdln">
+                    <a href=""> <img src="images/vatika-city-main-photo537-s.jpg" class="responsive-img"></a>
+                </div>
+                <div class="col s12 m6 pdln xspdl10">
+                    <div class="ft12">16 May 2017</div>
+                    <h2 class="ft18 b mgbn mgt5 truncate"><a  href="" class="red-text"> Project Name</a></h2>
+                    <h6 class="mgbn ft13 truncate text-darken-2 mgt5">
+                                <a href="" class="grey-text"> Golf Course Road, Sector 42</a></h6>
+                    <div class="mgt5 ft12 b">3BHK ( 2450 sq. ft. )</div>
+                </div>
+                <div class="col s12 m3 pdrn right-align">
+                    <span class="pdl10  b">Arpit Mittal</span>
+                    <div class="ft11 grey-text mgt5">09xxxxxxxxx</div>
+                    <div class="ft11 grey-text">xxxxxxxx@gmail.com</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 ft15 pdln">
+                    <p> Current Balance</p>
+                    <p>Cost</p>
+                    <p>Balance</p>
+                </div>
+                <div class="col s6 b ft15 pdrn">
+                    <p>5,850 Rs</p>
+                    <p>500 Rs</p>
+                    <p class="bodt pdt10">5,350 Rs</p>
+                </div>
+            </div>
+            <div class="row bodt center">
+                <h5 class="ft17 b green-text">Would you like to confirm ?</h5>
+                <a href="#!" class="btn">Yes</a>
+                <a class="modal-action modal-close btn btn-primary pointer">No</a>
+            </div>
+        </div>
+    </div>
+    <!-- popup buy end -->
+      <script type="text/javascript">
+    $(document).ready(function() {
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+    });
+    </script>
+   
 </div>

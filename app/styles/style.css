@@ -85,6 +85,45 @@ label {
 .proul ul li:nth-child(2n){background-color: #fafafa;}
 .proul ul li:hover{background-color: #eee; cursor: pointer;}
 .cirspn span{border: 2px solid #ddd; border-radius: 50%; display: inline-block; width: 50px; line-height: 46px; height: 50px;}
+.hdagnicon{position: relative; padding-left: 40px !important; margin-right: 30px !important;}
+.hdagnicon i{line-height: 20px; height: 20px; position: absolute; top: -20px !important; left:0;}
+.gall_btn{display: inline-block; margin-top: 20px;}
+.gall_btn:hover{color: #444!important;}
+.ftcard a{height:55px;}
+#viewdtails, #customer_dtails, .gal_dtl{display: none;position: fixed; z-index: 1040; height: 100%; width: 100%; top: 0; left: 0; background-color: rgba(0,0,0, 0.7);}
+.mns3{margin-top: -3px !important;}
+.bdalight {
+    border: 1px solid #f5f5f5 !important;
+}
+.btnflat, .btnflat:hover, .btnflat:focus{background-color: #fafafa; border: 0;}
+
+.sdb{box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);}
+
+.ondt p{padding-left: 40px;}
+.ht30{height: 35px; line-height: 20px;}
+.autoscroll{height:75vh; overflow-y: auto;}
+.wdbuy{width: 40% !important;}
+.bdrf, .bdrf:hover{border-right:1px solid #ddd !important;}
+
+.circle_profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; overflow:hidden;
+    margin-right: 30px;
+    
+}
+.circle_subuser {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; overflow:hidden;
+    margin-right: 30px;
+    
+}
+
+.addremove{color: #00bfa5;}
+.addremove:hover, .addremove:focus{color: #ff5252;}
+
+.fixprologo{width: 100px;}
 
 
  @media screen and (min-width: 0px) and (max-width: 600px){
@@ -92,6 +131,13 @@ label {
 .trans_fm{width: 96%;}
 .btn{padding-left: 20px !important; padding-right: 20px  !important;}
 .logo{margin-left: 0px;}
+.xsmgt5{margin-top: 5px;}
+.btnhd_prof ul li a:hover, .btnhd:hover{border-bottom: none !important;}
+.xs-center{text-align: center !important}
+.wdbuy{width: 95% !important;}
+.hdagnicon{ margin-right: 0px !important; }
+.ht30{height: auto;}
+
   }
  @media screen and (min-width: 0px) and (max-width: 1079px){
   .container {

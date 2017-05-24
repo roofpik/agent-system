@@ -1,41 +1,71 @@
-<section class="section">
+<section class="section mgt30">
     <div class="container">
         <div class="row pd48">
             <div class="col s12 m8 offset-m2">
                 <div class="row mgan">
                     <div class="col s12 pdl30">
-                        <h5 class="orange-text">Fill in the Details</h5>
+                        <h5 class="orange-text">Tenant Registration</h5>
+                        <p>Fill in the Details</p>
                         <form name="contactUs">
                             <div class="row mgbn">
-                                <div class="input-field col s12">
-                                    <input id="select_project" type="text" class="validate" required>
-                                    <label for="select_project">Your Name</label>
+                                <div class="input-field col s12 m6">
+                                    <input id="Firstname" type="text" class="validate" required>
+                                    <label for="Firstname">First Name</label>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <input id="lastname" type="text" class="validate" required>
+                                    <label for="lastname">Last Name</label>
                                 </div>
                             </div>
                             <div class="row mgbn">
-                                <div class="input-field col s12">
+                                <div class="input-field col s12 m6">
                                     <input id="email" type="text" class="validate" required>
                                     <label for="email">Email Id</label>
                                 </div>
-                            </div>
-                            <div class="row mgbn">
-                                <div class="input-field col s12">
+                                <div class="input-field col s12 m6">
                                     <input id="mobile" type="text" class="validate" required>
                                     <label for="mobile">Mobile No.</label>
                                 </div>
                             </div>
                             <div class="row mgbn">
-                                <h5 class="pdl10 ft15 b">Rent Range</h5>
-                                <div class="input-field col s6">
-                                    <input id="select_project" type="text" class="validate" required>
-                                    <label for="select_project">Min-Amount</label>
+                                <div class="input-field col s12 m6">
+                                    <input id="city" type="text" class="validate" required>
+                                    <label for="city">Current City</label>
                                 </div>
-                                <div class="input-field col s6">
-                                    <input id="select_project" type="text" class="validate" required>
-                                    <label for="select_project">Max-Amount</label>
+                                <div class="input-field col s12 m6">
+                                    <input id="mobile" type="text" class="validate" required>
+                                    <label for="mobile">Current Address</label>
                                 </div>
                             </div>
                             <div class="row mgbn">
+                                <h5 class="pdl10 ft15 b">Looking for</h5>
+                                <div class="col s6 m3 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Apartments" />
+                                    <label for="Apartments">Apartments</label>
+                                </div>
+                                <div class="col s6 m3 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Villas" />
+                                    <label for="Villas">Villas</label>
+                                </div>
+                                <div class="col s6 m3 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Penthouse" />
+                                    <label for="Penthouse">Penthouse</label>
+                                </div>
+                                <div class="col s6 m3 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Rowhouse" />
+                                    <label for="Rowhouse">Rowhouse</label>
+                                </div>
+                                <div class="col s6 m3 mgt5">
+                                    <input type="checkbox" class="filled-in" id="pg" />
+                                    <label for="pg">PG</label>
+                                </div>
+                                <div class="col s6 m3 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Flatmate" />
+                                    <label for="Flatmate">Flatmate</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn mgt30">
+                                <h5 class="pdl10 ft15 b">Specification</h5>
                                 <div class="input-field col s6">
                                     <select class="grey-text">
                                         <option value="" disabled selected>BHK</option>
@@ -55,77 +85,162 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row mgbn">
-                                <h5 class="pdl10 ft15 b">Projects</h5>
+                            <div class="row mgbn mgt30">
+                                <h5 class="pdl10 ft15 b">Rent Range <span class="ft13 grey-text ftw100">(Inculding Maintenance)</span></h5>
                                 <div class="input-field col s6">
                                     <input id="select_project" type="text" class="validate" required>
-                                    <label for="select_project">Projects Name</label>
+                                    <label for="select_project">Min-Amount</label>
                                 </div>
                                 <div class="input-field col s6">
                                     <input id="select_project" type="text" class="validate" required>
-                                    <label for="select_project">Projects Location</label>
+                                    <label for="select_project">Max-Amount</label>
                                 </div>
                             </div>
                             <div class="row mgbn">
+                                <h5 class="pdl10 ft15 b">Staying with</h5>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Alone" />
+                                    <label for="Alone">Alone (Bachlor)</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Family" />
+                                    <label for="Family">Family</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn mgt30">
+                                <h5 class="pdl10 ft15 b">Employment Details</h5>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Salaried" />
+                                    <label for="Salaried">Salaried</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Business" />
+                                    <label for="Business">Business</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" class="filled-in" id="Student" />
+                                    <label for="Student">Student</label>
+                                </div>
+                                <div class="input-field col s12 m4">
+                                    <input id="College" type="text" class="validate" required>
+                                    <label for="College">Company/College </label>
+                                </div>
+                                <div class="input-field col s12 m4">
+                                    <input id="Designation" type="text" class="validate" required>
+                                    <label for="Designation"> Designation </label>
+                                </div>
+                                <div class="input-field col s12 m4">
+                                    <input id="Experience" type="text" class="validate" required>
+                                    <label for="Experience"> Total Experience </label>
+                                </div>
                                 <div class="input-field col s12">
-                                    <input id="near" type="text" class="validate" required>
-                                    <label for="near">Type your Designation </label>
+                                    <input id="Experience" type="text" class="validate" required>
+                                    <label for="Experience">Linkedin Profile </label>
                                 </div>
                             </div>
                             <div class="row mgbn">
-                                <div class="input-field col s12">
-                                    <input id="near" type="text" class="validate" required>
-                                    <label for="near">Duration</label>
+                                <div class="input-field col s6">
+                                    <select multiple>
+                                        <option value="" disabled selected>Prefrence</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col s6">
+                                    <select multiple>
+                                        <option value="" disabled selected>Locality</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row mgbn">
-                                <div class="input-field col s12">
-                                    <input id="near" type="text" class="validate" required>
-                                    <label for="near">Specific Amenities </label>
+                                <h5 class="pdl10 ft15 b">Furnishing</h5>
+                                <div class="input-field col s6">
+                                    <select multiple>
+                                        <option value="" disabled selected>Select</option>
+                                        <option value="1">Semifurnished</option>
+                                        <option value="2">Unfurnished</option>
+                                        <option value="3">Fullyfurnished</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row mgbn">
-                                <h5 class="pdl10 ft15 b">Near to any place</h5>
-                                <div class="input-field col s12">
-                                    <input id="near" type="text" class="validate" required>
-                                    <label for="near">Near</label>
-                                </div>
-                            </div>
-                            <div class="row mgbn">
-                                <h5 class="pdl10 ft15 b">Activated</h5>
+                                <h5 class="pdl10 ft15 b">Move in Date</h5>
                                 <div class="input-field col s4">
-                                    <input id="date" type="text" class="validate" required>
-                                    <label for="date">Date</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input id="time" type="text" class="validate" required>
-                                    <label for="time">Time</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input id="user" type="text" class="validate" required>
-                                    <label for="user">User</label>
-                                </div>
-                            </div>
-                            <div class="row mgbn">
-                                <div class="input-field col s12">
-                                    <input id="select_project" type="text" class="validate" required>
-                                    <label for="project">Project Type</label>
-                                </div>
-                            </div>
-                            <div class="row mgbn">
-                                <div class="input-field col s12">
                                     <input id="movedate" type="date" class="datepicker">
-                                    <label for="movedate">Move in Date</label>
+                                    <label for="movedate">Date</label>
+                                </div>
+                                <div class="col s4 mgt30">
+                                    <input class="with-gap" name="group1" type="radio" id="Fixed" />
+                                    <label for="Fixed">Fixed</label>
+                                </div>
+                                <div class="col s4 mgt30">
+                                    <input class="with-gap" name="group1" type="radio" id="Flexible" />
+                                    <label for="Flexible">Flexible</label>
                                 </div>
                             </div>
                             <div class="row mgbn">
+                                <h5 class="pdl10 ft15 b">Amenities</h5>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Swimming" class="filled-in" />
+                                    <label for="Swimming">Swimming Pool</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Clubhouse" class="filled-in" />
+                                    <label for="Clubhouse">Good Clubhouse</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="best" class="filled-in" />
+                                    <label for="best">Best Amenities</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Luxury" class="filled-in" />
+                                    <label for="Luxury">Luxury</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Affordable" class="filled-in" />
+                                    <label for="Affordable">Affordable</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Ultra" class="filled-in" />
+                                    <label for="Ultra">Ultra Luxury</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Pet" class="filled-in" />
+                                    <label for="Pet">Pet Friendly</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Downtown" class="filled-in" />
+                                    <label for="Downtown">Downtown</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Bachelors" class="filled-in" />
+                                    <label for="Bachelors">Bachelors</label>
+                                </div>
+                                <div class="col s6 m4 mgt5">
+                                    <input type="checkbox" id="Senior" class="filled-in" />
+                                    <label for="Senior">Senior Living</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                            <h5 class="pdl10 ft15 b">Additional Requirements</h5>
                                 <div class="input-field col s12">
                                     <textarea id="textarea1" class="materialize-textarea" required></textarea>
-                                    <label for="textarea1">Type your Message</label>
+                                    <label for="textarea1">type your additional requirements</label>
+                                </div>
+                            </div>
+                            <div class="row mgbn">
+                             <h5 class="pdl10 ft15 b">Title</h5>
+                             <div class="input-field col s12">
+                                <input id="title" type="text" class="validate" required>
+                                <label for="title"> Type your title </label>
                                 </div>
                             </div>
                             <div class="col s12">
-                                <button class="btn">Submit</button>
+                                <button class="btn pdl30 pdr30">Submit</button>
                             </div>
                         </form>
                     </div>

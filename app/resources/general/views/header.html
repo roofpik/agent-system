@@ -1,5 +1,5 @@
 <div>
-    <div class="navbar headerfix">
+    <div class="navbar headerfix white">
         <nav class="white boxsdn">
             <div class="nav-wrapper">
                 <div class="row mgbn">
@@ -9,18 +9,27 @@
                         <a href="#/home" class="rooflogo left"><img src="images/general/logoicon.png" "> </a>
                     </div>
                     <ul class="right">
-                   
-                    <li ng-hide="loginStatus">
-                            <a href="#login_signup_popup" class="btnhd mgln">
-                                Login/Sign Up</a>
+                        <li>
+                            <a href="#/customerleads" class="btnhd mgln hdagnicon"> <i class="material-icons xsmgt5">person</i> <span class="hide-on-small-only">Customer Leads</span></a>
                         </li>
-                        <li class="btnhd_prof" ng-show="loginStatus">
+                         <li>
+                            <a href="#/owner-details" class="btnhd mgln hdagnicon"><i class="material-icons xsmgt5">vpn_key</i><span class="hide-on-small-only">Owner Leads</span></a>
+                        </li>
+                        <li class="btnhd_prof">
                             <a href="" class="btnhd">
-                                <img class="display-img left" src="images/general/noImage.png"> Dg Sharma
-                            </a>                           
+                                <img class="display-img left" src="images/general/noImage.png"> <span class="hide-on-small-only">Digamber Sharma</span>
+                            </a>
+                             <ul style="width: 170px">
+                                <li> <a href="#/profile-manage"><i class="material-icons left grey-text">edit</i> Manage Profile</a> </li>
+                                <li> <a href="#/sub-user"><i class="material-icons left grey-text">person</i> Sub Users</a> </li>
+                                <li>
+                                    <a href="">
+                                        <i class="material-icons left grey-text">power_settings_new</i> Logout
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                  
                 </div>
             </div>
         </nav>
@@ -31,15 +40,13 @@
         </div>
         <div class="row over_auto mgbn mgt30">
             <ul>
-                <li><a href="#/registration" class="">Registration</a></li>
-                <li><a href="">Payments</a></li>
-                <li><a href="">Account Balance</a></li>            
-                <li><a href="">Closure Status/Leads</a></li>
-                <li><a href="">Contact us</a></li>
-           
+                <li><a href="#/registration" class="">Registration</a></li>                
+                <li><a href="#/payments">Account Balance</a></li>
+                <li><a href="#/profile-manage">Closure Status/Leads</a></li>
+                
             </ul>
         </div>
-          <div class="navfooter wd100 grey lighten-4 pdt10">
+        <div class="navfooter wd100 grey lighten-4 pdt10">
             <div class="row mgbn">
                 <div class="col left pdt10 left-align">
                     <h6 class="grey-text mgtn">Follow us</h6>
@@ -65,33 +72,5 @@
                 </div>
             </div>
         </div>
-
     </div>
-    
-    <div id="login_signup_popup" class="modal">
-        <div class="modal-content pda20 white">
-            <section>
-                <div class="row mgbn">
-                    <div class="col s12 pdb10 mgt10">
-                        <a href="#!" class="block grey-text right review-m  modal-close"><i class="material-icons">close</i></a>
-                        <h3 class="ft15   grey-text text-darken-2"> <i class="material-icons grey-text mgmnst3 ft20 left mgr10">lock_outline</i> Login / Sign Up</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 center">
-                        <a href="" class="btn btn-full btfacebook btn-large b blue darken-4 white-text">
-                            <img src="images/general/facebook1.png" class="left facebookicon"> Log in with Facebook
-                        </a>
-                        <div class="row mgln mgrn pdt30">
-                            <hr class="mgmnsb10">
-                            <span class="inline white pdl10 pdr10 grey-text"> OR</span>
-                        </div>
-                        <a href="" class="btn white btn-large btgoogle b btn-full bodall grey-text text-darken-2"><img src="images/general/googleplusicon.png" class="left icongoogle"> Log in with Google</a>
-                        <a href="#/registration" class="btn btn-large btn-full btn-primary mgt30 b"><i class="material-icons left">lock_outline</i> Sign Up</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    
 </div>

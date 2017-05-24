@@ -37,13 +37,50 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
         url: '/registration',
         templateUrl: 'resources/general/views/registration.html'
     });
+
      $stateProvider.state('home', {
         url: '/',
         templateUrl: 'resources/home/views/home.html'
     });
-      $stateProvider.state('owner-details', {
+
+    $stateProvider.state('owner-details', {
         url: '/owner-details',
-        templateUrl: 'resources/home/views/owner-details.html'
+        templateUrl: 'resources/home/views/owner-details.html',
+        controller: 'ownerdetailsCtrl'
+    });
+     $stateProvider.state('owner-details-form', {
+        url: '/owner-registration',
+        templateUrl: 'resources/home/views/owner-details-form.html',
+        controller: 'ownerdetailsCtrl'
+    });
+
+    $stateProvider.state('customerleads', {
+        url: '/customerleads',
+        templateUrl: 'resources/home/views/customerleads.html',
+        controller: 'ownerdetailsCtrl'
+    });
+
+$stateProvider.state('profile-manage', {
+        url: '/profile-manage',
+        templateUrl: 'resources/home/views/profile-manage.html',
+        controller: 'ownerdetailsCtrl'
+    });
+
+$stateProvider.state('sub-user', {
+        url: '/sub-user',
+        templateUrl: 'resources/home/views/sub-user.html',
+        controller: 'ownerdetailsCtrl'
+    });
+
+    $stateProvider.state('payments', {
+        url: '/payments',
+        templateUrl: 'resources/home/views/paymentsandaccount.html',
+        controller: 'ownerdetailsCtrl'
+    });
+    $stateProvider.state('invoice-table', {
+        url: '/invoice-table',
+        templateUrl: 'resources/home/views/invoice-table.html',
+        controller: 'ownerdetailsCtrl'
     });
 
 // new page end
