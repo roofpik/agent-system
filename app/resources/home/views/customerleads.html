@@ -1,11 +1,122 @@
 <div>
+ <div class="side-nav hide-on-large-only" id="slide-out1">
+        <form>
+            <div class="row filter-heading">
+                <div class="col s12">
+                    <span> Filters </span>
+                </div>
+            </div>
+            <hr>
+            <div class="row mgbn">
+                <div class="col s12">
+                    <h3 class="ft14 b">Rent</h3>
+                </div>
+                <div class="col s12">
+                    <div id="price"></div>
+                </div>
+                <div class="col s6">
+                    <input id="minP" placeholder="₹ Min" type="number" ng-change="minChange()" ng-model="data.rmin" />
+                </div>
+                <div class="col s6">
+                    <input id="maxP" placeholder="₹ Max" type="number" ng-change="maxChange()" ng-model="data.rmax" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="ft14 b">Project Categories</h3>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="best" class="filled-in" />
+                    <label class="ft11" for="best">Best Amenities</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Luxury" class="filled-in" />
+                    <label class="ft11" for="Luxury">Luxury</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Affordable" class="filled-in" />
+                    <label class="ft11" for="Affordable">Affordable</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Ultra" class="filled-in" />
+                    <label class="ft11" for="Ultra">Ultra Luxury</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Pet" class="filled-in" />
+                    <label class="ft11" for="Pet">Pet Friendly</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Downtown" class="filled-in" />
+                    <label class="ft11" for="Downtown">Downtown</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Bachelors" class="filled-in" />
+                    <label class="ft11" for="Bachelors">Bachelors</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Senior" class="filled-in" />
+                    <label class="ft11" for="Senior">Senior Living</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="ft14 b">Bedroom</h3>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk1" />
+                    <label class="ft11" for="bhk1">1 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk2" />
+                    <label class="ft11" for="bhk2">2 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk3" />
+                    <label class="ft11" for="bhk3">3 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk4" />
+                    <label class="ft11" for="bhk4">4 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk5" />
+                    <label class="ft11" for="bhk5">5 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk5p" />
+                    <label class="ft11" for="bhk5p">5+ BHK</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="ft14 b">Property Types</h3>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Apartments" />
+                    <label class="ft11" for="Apartments">Apartments</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Villas" />
+                    <label class="ft11" for="Villas">Villas</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Penthouse" />
+                    <label class="ft11" for="Penthouse">Penthouse</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Rowhouse" />
+                    <label class="ft11" for="Rowhouse">Rowhouse</label>
+                </div>
+            </div>          
+        </form>
+    </div>
     <section class="mgt65 grey lighten-5">
         <div>
             <div class="row mgt45">
                 <section>
                     <div class="row list-heading">
                         <div class="col s12 pdl30 xspdl20">
-                            <h5 class="mgbn"> Owner Details  <a href="#" data-activates="slide-out1" class="right flticon button-collapse1 hide-on-large-only"><i class="material-icons">menu</i></a></h5>
+                            <h5 class="mgbn"> Customer Details  <a href="#" data-activates="slide-out1" class="right flticon button-collapse1 hide-on-large-only"><i class="material-icons">menu</i></a></h5>
                         </div>
                         <div class="row linkroot mgan">
                             <nav class="bgtrans pdl20 xspdl10">
@@ -127,9 +238,7 @@
                                         <input type="checkbox" class="filled-in" id="Rowhouse" />
                                         <label class="ft11" for="Rowhouse">Rowhouse</label>
                                     </div>
-                                </div>
-                                <!-- Modal Trigger -->
-                                <!-- Modal Structure -->
+                                </div>                             
                             </form>
                         </div>
                         <div class="col s12 m12 l7 pdr30 xspdr20 projList">

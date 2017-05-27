@@ -1,4 +1,115 @@
 <div>
+    <div class="side-nav hide-on-large-only" id="slide-out1">
+        <form>
+            <div class="row filter-heading">
+                <div class="col s12">
+                    <span> Filters </span>
+                </div>
+            </div>
+            <hr>
+            <div class="row mgbn">
+                <div class="col s12">
+                    <h3 class="ft14 b">Rent</h3>
+                </div>
+                <div class="col s12">
+                    <div id="price"></div>
+                </div>
+                <div class="col s6">
+                    <input id="minP" placeholder="₹ Min" type="number" ng-change="minChange()" ng-model="data.rmin" />
+                </div>
+                <div class="col s6">
+                    <input id="maxP" placeholder="₹ Max" type="number" ng-change="maxChange()" ng-model="data.rmax" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="ft14 b">Project Categories</h3>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="best" class="filled-in" />
+                    <label class="ft11" for="best">Best Amenities</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Luxury" class="filled-in" />
+                    <label class="ft11" for="Luxury">Luxury</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Affordable" class="filled-in" />
+                    <label class="ft11" for="Affordable">Affordable</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Ultra" class="filled-in" />
+                    <label class="ft11" for="Ultra">Ultra Luxury</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Pet" class="filled-in" />
+                    <label class="ft11" for="Pet">Pet Friendly</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Downtown" class="filled-in" />
+                    <label class="ft11" for="Downtown">Downtown</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Bachelors" class="filled-in" />
+                    <label class="ft11" for="Bachelors">Bachelors</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" id="Senior" class="filled-in" />
+                    <label class="ft11" for="Senior">Senior Living</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="ft14 b">Bedroom</h3>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk1" />
+                    <label class="ft11" for="bhk1">1 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk2" />
+                    <label class="ft11" for="bhk2">2 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk3" />
+                    <label class="ft11" for="bhk3">3 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk4" />
+                    <label class="ft11" for="bhk4">4 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk5" />
+                    <label class="ft11" for="bhk5">5 BHK</label>
+                </div>
+                <div class="col s6 mgt5">
+                    <input type="checkbox" class="filled-in" id="bhk5p" />
+                    <label class="ft11" for="bhk5p">5+ BHK</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="ft14 b">Property Types</h3>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Apartments" />
+                    <label class="ft11" for="Apartments">Apartments</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Villas" />
+                    <label class="ft11" for="Villas">Villas</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Penthouse" />
+                    <label class="ft11" for="Penthouse">Penthouse</label>
+                </div>
+                <div class="col s12 mgt5">
+                    <input type="checkbox" class="filled-in" id="Rowhouse" />
+                    <label class="ft11" for="Rowhouse">Rowhouse</label>
+                </div>
+            </div>          
+        </form>
+    </div>
     <section class="mgt65 grey lighten-5">
         <div>
             <div class="row mgt45">
@@ -128,13 +239,7 @@
                                         <label class="ft11" for="Rowhouse">Rowhouse</label>
                                     </div>
                                 </div>
-                                <div class="row  mgbn">
-                                    <div class="col s12">
-                                        <span class="more-filter">More Filters</span>
-                                    </div>
-                                </div>
-                                <!-- Modal Trigger -->
-                                <!-- Modal Structure -->
+                              
                             </form>
                         </div>
                         <div class="col s12 m12 l7 pdr30 xspdr20 projList">
@@ -182,7 +287,7 @@
                                     </button>
                                 </div>
                             </div>
-                           <div class="col s12 card pdt10 pdbn pdln pdrn white">
+                            <div class="col s12 card pdt10 pdbn pdln pdrn white">
                                 <div class="row relative mgb10">
                                     <div class="col s12 m3 proj-thumb">
                                         <a href=""> <img src="images/vatika-city-main-photo537-s.jpg" class="responsive-img"></a>
@@ -226,7 +331,7 @@
                                     </button>
                                 </div>
                             </div>
-                           <div class="col s12 card pdt10 pdbn pdln pdrn white">
+                            <div class="col s12 card pdt10 pdbn pdln pdrn white">
                                 <div class="row relative mgb10">
                                     <div class="col s12 m3 proj-thumb">
                                         <a href=""> <img src="images/vatika-city-main-photo537-s.jpg" class="responsive-img"></a>
@@ -347,82 +452,79 @@
                     <div class="col s12 m12 bdalight">
                         <h5 class="grey-text text-darken-2 ft17"><i class="material-icons left mns3">view_comfy</i> Furnished</h5>
                         <div class="row">
-                                        <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/ac.png" alt="">
-                                            <span class="ht45 block"> 5 AC</span>
-                                        </div>
-                                        <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/bed.png" alt="">
-                                            <span class="ht45 block">  4 Bed</span>
-                                        </div>
-                                        <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/chimney.png" alt="">
-                                            <span class="ht45 block">  1 Chimney</span>
-                                        </div>
-                                        <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/curtain.png" alt="">
-                                            <span class="ht45 block">  1 Curtains</span>
-                                        </div>
-                                        <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/Dining.png" alt="">
-                                            <span class="ht45 block">  1 Dining Table</span>
-                                        </div>
-                                        <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/ex_fan.png" alt="">
-                                            <span class="ht45 block">  1 Exhaust Fan</span>
-                                        </div>
-                                        <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/fan.png" alt="">
-                                            <span class="ht45 block">  6 Fan</span>
-                                        </div>
-
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/Geyser.png" alt="">
-                                            <span class="ht45 block">  4 Geyser</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/modular-k.png" alt="">
-                                            <span class="ht45 block">  1 Modular Kitchen</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/lights.png" alt="">
-                                            <span class="ht45 block">  8 Lights</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/Appliances.png" alt="">
-                                            <span class="ht45 block">  1 Microwave</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/Refrigerator.png" alt="">
-                                            <span class="ht45 block">  1 Fridge</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/sofa.png" alt="">
-                                            <span class="ht45 block">  1 sofa</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/gas_stove.png" alt="">
-                                            <span class="ht45 block">  1 Stove</span>
-                                        </div>
-
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/Television.png" alt="">
-                                            <span class="ht45 block">  2 TV</span>
-                                        </div>
-
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/lift.png" alt="">
-                                            <span class="ht45 block">  4 Wardrobe</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/Washer.png" alt="">
-                                            <span class="ht45 block">  1 Washing Machine</span>
-                                        </div>
-                                         <div class="col s2 wd20p pda10 imgic_amn center">
-                                            <img src="images/icons/water3.png" alt="">
-                                            <span class="ht45 block">  1 Water Purifier</span>
-                                        </div>
-                                    </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/ac.png" alt="">
+                                <span class="ht45 block"> 5 AC</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/bed.png" alt="">
+                                <span class="ht45 block">  4 Bed</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/chimney.png" alt="">
+                                <span class="ht45 block">  1 Chimney</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/curtain.png" alt="">
+                                <span class="ht45 block">  1 Curtains</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/Dining.png" alt="">
+                                <span class="ht45 block">  1 Dining Table</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/ex_fan.png" alt="">
+                                <span class="ht45 block">  1 Exhaust Fan</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/fan.png" alt="">
+                                <span class="ht45 block">  6 Fan</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/Geyser.png" alt="">
+                                <span class="ht45 block">  4 Geyser</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/modular-k.png" alt="">
+                                <span class="ht45 block">  1 Modular Kitchen</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/lights.png" alt="">
+                                <span class="ht45 block">  8 Lights</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/Appliances.png" alt="">
+                                <span class="ht45 block">  1 Microwave</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/Refrigerator.png" alt="">
+                                <span class="ht45 block">  1 Fridge</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/sofa.png" alt="">
+                                <span class="ht45 block">  1 sofa</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/gas_stove.png" alt="">
+                                <span class="ht45 block">  1 Stove</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/Television.png" alt="">
+                                <span class="ht45 block">  2 TV</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/lift.png" alt="">
+                                <span class="ht45 block">  4 Wardrobe</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/Washer.png" alt="">
+                                <span class="ht45 block">  1 Washing Machine</span>
+                            </div>
+                            <div class="col s2 wd20p pda10 imgic_amn center">
+                                <img src="images/icons/water3.png" alt="">
+                                <span class="ht45 block">  1 Water Purifier</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -431,33 +533,33 @@
     <!-- end popup -->
     <!-- gallery -->
     <div class="gal_dtl" id="gallery">
-    <div class="row">
-        <div class="col s12 m12 l8 offset-l2 mgt30 pda20 white">
-            <h5 class="ft15 mgtn b pdb10">Gallery <i class="material-icons right pointer"  onclick="$('.gal_dtl') .css ('display','none')">close</i></h5>
-            <div class="row mgan ondt autoscroll">
-                <div class="gallery">
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                     <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                     <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                     <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
-                    <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+        <div class="row">
+            <div class="col s12 m12 l8 offset-l2 mgt30 pda20 white">
+                <h5 class="ft15 mgtn b pdb10">Gallery <i class="material-icons right pointer"  onclick="$('.gal_dtl') .css ('display','none')">close</i></h5>
+                <div class="row mgan ondt autoscroll">
+                    <div class="gallery">
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                        <a href="images/vatika-city-main-photo537-s.jpg"><img src="images/vatika-city-main-photo537-s.jpg"></a>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </div>
     <!-- gallery end -->
-        <!-- popup buy start -->
+    <!-- popup buy start -->
     <div id="buypopupExclusive" class="modal wdbuy white">
         <div class="modal-content pda20">
             <h5 class="ft15 mgtn b pdb10">Exclusive Leads <i class="material-icons right pointer modal-action modal-close">close</i></h5>
@@ -537,11 +639,13 @@
         </div>
     </div>
     <!-- popup buy end -->
-      <script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal').modal();
+
+
+
     });
     </script>
-   
 </div>
